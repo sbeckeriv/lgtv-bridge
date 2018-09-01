@@ -1,14 +1,18 @@
-# Startguide - lgtv-alexa-skill
-## Node.js bridge for LG Smart TV and Amazon Alexa
+# Setup Guide
+## Node.js bridge to integrate LG Smart TV, Amazon Alexa + Slack
 
 ### Software requirements
 - node.js
 - npm
+- ruby
 
-### To run
+### To run on a local server
 - Enter your TV's MAC address and IP address into config.json
 - `npm install`
 - `node index.js alexa`
+
+### Creating a Docker image for Unraid
+- TBD
 
 ### To do on the first run
 - Be sure your Alexa-ready device is up and running
@@ -47,11 +51,14 @@
 - **Turn tv on/off**: "Alexa, turn TV [on|off]"
 - **Start/stop application**: "Alexa, turn \[on|off\] \[your app\]" or "Alexa,\[start|stop\] \[your app\]"
 - **Mute/unmute tv**: "Alexa, turn _muting mode_ \[on|off\]"
+- **Switch inputs**: "Alexa, start [HDMI1|HDMI2]"
 
 ### Available applications
 - Netflix
-- YouTube
-- Broadcasting (LiveTV)
+- Amazon Prime
+- MLB TV
+- Plex
+- Spotify
 
 ### Add your application
 It's possible to add your own application if you know the appID (and if you don't just run the `appslist` command to get a list).
