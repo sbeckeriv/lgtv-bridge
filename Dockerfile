@@ -9,5 +9,5 @@ RUN gem install bundle
 CMD git clone https://github.com/bigbadblo/slack-bot.git
 CMD cd slack-mathbot
 RUN bundle
-RUN rackup config.ru &
+RUN rackup -D config.ru
 CMD node index.js alexa
