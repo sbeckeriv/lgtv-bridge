@@ -59,8 +59,6 @@ Add your application on `apps.json`, restart the Alexa bridge and run the device
 [Alexa website](https://alexa.amazon.com).
 
 ### Thanks to
+- [lucone83, lgtv-alexa-skill] (https://github.com/lucone83/lgtv-alexa-skill)
 - [hobbyquacker, lgtv2 library](https://github.com/hobbyquaker/lgtv2)
 - [neil-morrison-44, forked project](https://github.com/neil-morrison44/lg-alexa-node)
-
-
-
