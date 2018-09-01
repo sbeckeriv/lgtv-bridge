@@ -1,5 +1,9 @@
 [
   {"displayName": "Netflix", "id": "netflix"},
-  {"displayName": "Youtube", "id": "youtube.leanback.v4"},
-  {"displayName": "Broadcasting", "id": "com.webos.app.livetv"}
+  {"displayName": "Prime", "id": "amazon"},
+  {"displayName": "MLB TV", "id": "mlb"},
+  {"displayName": "Plex on LG", "id": "cdp-30"},
+  {"displayName": "Spotify on LG", "id": "spotify-beehive"},
+  {"displayName": "HDMI One", "id": "com.webos.app.hdmi1"},
+  {"displayName": "HDMI Two", "id": "com.webos.app.hdmi2"}
 ]
