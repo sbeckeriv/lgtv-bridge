@@ -8,6 +8,6 @@ RUN apt-get install -y ruby ruby-dev
 RUN gem install bundle
 CMD git clone https://github.com/bigbadblo/slack-bot.git
 CMD cd slack-mathbot
-RUN bundle
+CMD bundle
 RUN rackup -D config.ru
 CMD node index.js alexa
