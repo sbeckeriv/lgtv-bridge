@@ -5,9 +5,10 @@ RUN npm install
 COPY . /app
 RUN apt-get update
 RUN apt-get install -y ruby ruby-dev
-RUN gem install bundle
 CMD git clone https://github.com/bigbadblo/slack-bot.git
-CMD cd slack-mathbot
-CMD bundle
+WORKDIR /app/slack-bot
+RUN gem install bundle
+RUN bundle
 RUN rackup -D config.ru
+WORKDIR /app
 CMD node index.js alexa
