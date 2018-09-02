@@ -6,9 +6,5 @@ COPY . /app
 RUN apt-get update
 RUN apt-get install -y ruby ruby-dev
 CMD git clone https://github.com/bigbadblo/slack-bot.git
-WORKDIR /app/slack-bot
-RUN gem install bundle
-RUN bundle
-RUN rackup -D config.ru
-WORKDIR /app
+RUN cd slack-bot && gem install bundle && bundle && rackup -D config.ru
 CMD node index.js alexa
