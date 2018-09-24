@@ -2,7 +2,7 @@
 
 node index.js alexa &
 
-cd /app/slack-bot && bundle exec rackup -D config.ru &
+cd /app/slack-bot && bundle exec rackup config.ru &>  /app/slack-bot/log.txt &
 
 while sleep 60; do
   ps aux |grep rackup |grep -q -v grep
